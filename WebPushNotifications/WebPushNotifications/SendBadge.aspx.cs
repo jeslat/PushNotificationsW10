@@ -24,7 +24,7 @@ namespace WebPushNotifications
             var contentType = "text/xml";
             var uri = TextBoxUri.Text;
 
-            var badge = "<badge value=\"" + TextBoxNumber.Text + "\" version?=integer/>";
+            var badge = "<badge value=\"" + TextBoxNumber.Text + "\" />";
 
             try
             {
