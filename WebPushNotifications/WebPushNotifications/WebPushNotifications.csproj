@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="SendBadge.aspx" />
+    <Content Include="SendRaw.aspx" />
     <Content Include="SendToast.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -83,6 +84,13 @@
     </Compile>
     <Compile Include="SendBadge.aspx.designer.cs">
       <DependentUpon>SendBadge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendRaw.aspx.cs">
+      <DependentUpon>SendRaw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendRaw.aspx.designer.cs">
+      <DependentUpon>SendRaw.aspx</DependentUpon>
     </Compile>
     <Compile Include="SendToast.aspx.cs">
       <DependentUpon>SendToast.aspx</DependentUpon>

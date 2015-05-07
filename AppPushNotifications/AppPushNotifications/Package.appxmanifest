@@ -38,10 +38,20 @@
         Description="AppPushNotifications"
         BackgroundColor="#464646">
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+		<uap:LockScreen Notification="badge" BadgeLogo="Assets\Logo.scale-100.png"/>
       </uap:VisualElements>
+
+		<Extensions>
+			<Extension Category="windows.backgroundTasks" EntryPoint="RawPushNotifications.RawBackgroundTask">
+				<BackgroundTasks>
+					<Task Type="pushNotification"/>
+				</BackgroundTasks>
+			</Extension>
+		</Extensions>
+		
     </Application>
   </Applications>
-
+	
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
