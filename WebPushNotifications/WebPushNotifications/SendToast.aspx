@@ -23,12 +23,12 @@
     <asp:TextBox ID="TextBoxClientSecret" runat="server" Width="666px"></asp:TextBox>
     <br />
     <br />
-	Enter Title:<br />
-    <asp:TextBox ID="TextBoxTitle" runat="server"></asp:TextBox>
+	Title:<br />
+    <asp:TextBox ID="TextBoxTitle" runat="server" Width="300px"></asp:TextBox>
     <br />
     <br />
-    Enter Subtitle:<br />
-    <asp:TextBox ID="TextBoxSubTitle" runat="server"></asp:TextBox>
+    Subtitle:<br />
+    <asp:TextBox ID="TextBoxSubTitle" runat="server" Width="300px"></asp:TextBox>
     <br />
     <br />
     <br />
