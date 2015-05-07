@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SendToast.aspx.cs" Inherits="WebPushNotifications.SendToast" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SendBadge.aspx.cs" Inherits="WebPushNotifications.SendBadge" %>
 
 <!DOCTYPE html>
 
@@ -22,17 +22,13 @@
             <asp:TextBox ID="TextBoxClientSecret" runat="server" Width="666px"></asp:TextBox>
             <br />
             <br />
-            Title:<br />
-            <asp:TextBox ID="TextBoxTitle" runat="server" Width="300px"></asp:TextBox>
-            <br />
-            <br />
-            Subtitle:<br />
-            <asp:TextBox ID="TextBoxSubTitle" runat="server" Width="300px"></asp:TextBox>
+            Number:<br />
+            <asp:TextBox ID="TextBoxNumber" runat="server" Width="300px"></asp:TextBox>
             <br />
             <br />
             <br />
-            <asp:Button ID="ButtonSendToast" runat="server" OnClick="ButtonSendToast_Click"
-                Text="Send Toast Notification" />
+            <asp:Button ID="ButtonSendBadge" runat="server" OnClick="ButtonSendBadge_Click"
+                Text="Send Badge Notification" />
             <br />
             <br />
             Response:<br />

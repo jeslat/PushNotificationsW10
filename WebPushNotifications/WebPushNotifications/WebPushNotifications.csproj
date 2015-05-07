@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,11 +71,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SendBadge.aspx" />
     <Content Include="SendToast.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendBadge.aspx.cs">
+      <DependentUpon>SendBadge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendBadge.aspx.designer.cs">
+      <DependentUpon>SendBadge.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SendToast.aspx.cs">
       <DependentUpon>SendToast.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
