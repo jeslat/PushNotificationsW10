@@ -102,5 +102,11 @@ namespace AppPushNotifications
             }
             return false;
         }
+
+        private async void SendUriByEmail_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            var mailto = new Uri("mailto:?to=email@example.com&subject=Push notifications uri&body=" + TextBoxUri.Text);
+            await Windows.System.Launcher.LaunchUriAsync(mailto);
+        }
     }
 }
